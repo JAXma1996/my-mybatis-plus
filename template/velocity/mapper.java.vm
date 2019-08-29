@@ -1,0 +1,21 @@
+package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${superMapperClassPackage};
+
+
+/**
+ * @ProjectName: anti-deception-admin
+ * @Package: ${package.Mapper}
+ * @ClassName: ${entity}
+ * @Author: ${author}
+ * @Description:
+ * @Date: ${date}
+ */
+#if(${kotlin})
+interface ${table.mapperName} : ${superMapperClass}<${entity}>
+#else
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+}
+#end
