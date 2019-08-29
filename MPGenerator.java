@@ -121,13 +121,17 @@ public class MPGenerator {
         TemplateConfig templateConfig = new TemplateConfig();
         if (entityTemplate!=null){
             templateConfig.setEntity(entityTemplate);
-        }else if (serviceTemplate!=null){
+        }
+        if (serviceTemplate!=null){
             templateConfig.setService(serviceTemplate);
-        }else if(controllerTemplate!=null ){
+        }
+        if(controllerTemplate!=null ){
             templateConfig.setController(controllerTemplate);
-        }else if(serviceImplTemplate!=null){
+        }
+        if(serviceImplTemplate!=null){
             templateConfig.setServiceImpl(serviceImplTemplate);
-        }else if(mapperTemplate!=null){
+        }
+        if(mapperTemplate!=null){
             templateConfig.setMapper(mapperTemplate);
         }
 
